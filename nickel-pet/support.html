@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nickel Pet — Support</title>
+  <meta name="description" content="Support, contact, and FAQ for Nickel Pet, the anti-spending money pet for iOS.">
+  <link rel="icon" type="image/png" href="icon-1024.png">
+  <style>
+    :root {
+      --bg: #14161a;
+      --bg-2: #1a1c22;
+      --fg: #f5f7f9;
+      --fg-dim: #a8aeb8;
+      --mint: #4cd7b0;
+      --mint-soft: rgba(76, 215, 176, 0.12);
+      --line: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 720px; margin: 0 auto; padding: 56px 24px 96px; }
+    header { text-align: center; margin-bottom: 48px; }
+    header img { width: 96px; height: 96px; border-radius: 22px; box-shadow: 0 12px 30px rgba(0,0,0,0.4); }
+    header h1 {
+      font-size: 36px; font-weight: 700; margin: 18px 0 6px; letter-spacing: -0.5px;
+    }
+    header .tag {
+      display: inline-block; padding: 4px 12px; border-radius: 999px;
+      background: var(--mint-soft); color: var(--mint); font-size: 14px; font-weight: 500;
+    }
+    h2 {
+      font-size: 20px; font-weight: 600; margin: 40px 0 12px; letter-spacing: -0.2px;
+      color: var(--mint);
+    }
+    p { margin: 0 0 14px; color: var(--fg); }
+    .dim { color: var(--fg-dim); }
+    a { color: var(--mint); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s; }
+    a:hover { border-bottom-color: var(--mint); }
+    .card {
+      background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px;
+      padding: 20px 22px; margin: 0 0 16px;
+    }
+    .card h3 {
+      font-size: 16px; font-weight: 600; margin: 0 0 8px;
+    }
+    .card p { margin: 0; color: var(--fg-dim); font-size: 15px; }
+    .contact {
+      background: linear-gradient(180deg, var(--mint-soft), transparent);
+      border: 1px solid var(--mint);
+      border-radius: 14px; padding: 24px; text-align: center; margin: 32px 0;
+    }
+    .contact .label { color: var(--fg-dim); font-size: 13px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 6px; }
+    .contact .email { font-size: 20px; font-weight: 600; }
+    .contact a { color: var(--fg); }
+    .contact a:hover { color: var(--mint); }
+    ul.faq { list-style: none; padding: 0; margin: 0; }
+    ul.faq li { margin: 0 0 24px; }
+    ul.faq li strong { color: var(--fg); display: block; margin-bottom: 4px; font-weight: 600; }
+    ul.faq li .a { color: var(--fg-dim); }
+    footer {
+      margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line);
+      text-align: center; color: var(--fg-dim); font-size: 13px;
+    }
+    code {
+      background: var(--bg-2); padding: 2px 6px; border-radius: 4px; font-size: 14px;
+      color: var(--mint); border: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="icon-1024.png" alt="Nickel Pet app icon">
+      <h1>Nickel Pet</h1>
+      <span class="tag">Support</span>
+    </header>
+
+    <p class="dim" style="text-align: center; font-size: 17px;">
+      The little stuff adds up. Nickel Pet makes the "no" feel like a win.
+    </p>
+
+    <div class="contact">
+      <div class="label">Email Support</div>
+      <div class="email"><a href="mailto:support@nickelpet.app">support@nickelpet.app</a></div>
+    </div>
+
+    <p>
+      Most questions are answered below. If not, email is the fastest way to reach a real person.
+      Replies usually within 1–2 business days.
+    </p>
+
+    <h2>Frequently asked</h2>
+    <ul class="faq">
+      <li>
+        <strong>Is Nickel Pet really free?</strong>
+        <div class="a">
+          Yes. Download is free, no ads, no subscription. Optional one-time purchases let you
+          unlock extra pet characters (Pico the Cat, Boo the Ghost, Emberlynn the Dragon)
+          and there's a tip jar if you'd like to support development. None of the IAP gate
+          core functionality.
+        </div>
+      </li>
+      <li>
+        <strong>Where is my data stored?</strong>
+        <div class="a">
+          Entirely on your iPhone. No servers, no accounts, no syncing required.
+          If you turn on iCloud backup (in Settings), your state will sync to your private
+          iCloud — but never leaves Apple's ecosystem. Deleting the app deletes everything.
+        </div>
+      </li>
+      <li>
+        <strong>I lost my saves / progress. Can you restore it?</strong>
+        <div class="a">
+          We can't — because the data never left your phone. Restoring from an iCloud
+          backup of the device (in iOS Settings → General → Transfer or Reset → Reset) will
+          bring it back if it was in the backup. The tip jar / character purchases are
+          tied to your Apple ID and can be re-downloaded via <em>Restore Purchases</em>
+          in Settings → Shop.
+        </div>
+      </li>
+      <li>
+        <strong>How do I report a bug?</strong>
+        <div class="a">
+          Email <a href="mailto:support@nickelpet.app">support@nickelpet.app</a> with:
+          (1) what happened, (2) what you expected, (3) your iOS version (Settings → General → About).
+          A screenshot helps a lot.
+        </div>
+      </li>
+      <li>
+        <strong>How do I request a feature?</strong>
+        <div class="a">
+          Same address — <a href="mailto:support@nickelpet.app">support@nickelpet.app</a>.
+          The roadmap is shaped by what users actually ask for, so feature requests
+          are read by a human and often become real features.
+        </div>
+      </li>
+      <li>
+        <strong>Why doesn't the app connect to my bank?</strong>
+        <div class="a">
+          Deliberately. Nickel Pet is a <em>friction</em> tool, not a tracking tool. You log
+          the purchase you didn't make, you don't grant read access to your real accounts.
+          This is also why there's no "import transactions" feature and never will be.
+        </div>
+      </li>
+      <li>
+        <strong>Can my kid use it? Is it safe?</strong>
+        <div class="a">
+          Yes. Rated 4+ for all ages. No chat, no social features, no external links,
+          no in-app ads. The in-app purchases are gated behind Settings — kids using
+          the main flow won't see them.
+        </div>
+      </li>
+      <li>
+        <strong>How do I delete everything?</strong>
+        <div class="a">
+          Two ways: (1) in-app, go to Settings → <em>Start over</em>. Or (2) delete the
+          app from your home screen. Either way, it's gone for good.
+        </div>
+      </li>
+    </ul>
+
+    <h2>App info</h2>
+    <div class="card">
+      <h3>Version</h3>
+      <p>1.0 (build 1) — first release.</p>
+    </div>
+    <div class="card">
+      <h3>Compatibility</h3>
+      <p>iOS 17.0 or later. iPhone only.</p>
+    </div>
+    <div class="card">
+      <h3>Purchases &amp; refunds</h3>
+      <p>
+        All purchases are processed by Apple. To request a refund, use
+        <a href="https://reportaproblem.apple.com/">reportaproblem.apple.com</a>
+        — Apple handles all refund requests.
+      </p>
+    </div>
+
+    <footer>
+      Made with care. <a href="privacy.html">Privacy</a> · <a href="index.html">Home</a>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nickel Pet — The anti-spending money pet</title>
+  <meta name="description" content="Nickel Pet is the anti-spending money pet for iOS. Skip an impulse buy, stash the savings, watch your pet thrive.">
+  <link rel="icon" type="image/png" href="icon-1024.png">
+  <style>
+    :root {
+      --bg: #14161a;
+      --bg-2: #1a1c22;
+      --fg: #f5f7f9;
+      --fg-dim: #a8aeb8;
+      --mint: #4cd7b0;
+      --mint-soft: rgba(76, 215, 176, 0.12);
+      --line: rgba(255, 255, 255, 0.08);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 64px 24px 96px; }
+    .hero { text-align: center; margin-bottom: 56px; }
+    .hero img {
+      width: 128px; height: 128px; border-radius: 28px;
+      box-shadow: 0 18px 40px rgba(0,0,0,0.5);
+    }
+    .hero h1 {
+      font-size: 44px; font-weight: 700; margin: 22px 0 6px; letter-spacing: -1px;
+    }
+    .hero .sub {
+      font-size: 19px; color: var(--fg-dim); margin: 0 0 24px;
+    }
+    .pill {
+      display: inline-block; padding: 6px 14px; border-radius: 999px;
+      background: var(--mint-soft); color: var(--mint);
+      font-size: 13px; font-weight: 500; letter-spacing: 0.3px;
+    }
+    .cta {
+      display: inline-block; margin: 32px 0 8px;
+      padding: 14px 28px; border-radius: 14px;
+      background: var(--mint); color: #0a1a14; font-weight: 600; font-size: 17px;
+      text-decoration: none; border-bottom: none;
+    }
+    .cta:hover { transform: translateY(-1px); box-shadow: 0 8px 20px rgba(76,215,176,0.3); }
+    .features {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px; margin: 48px 0 32px;
+    }
+    .feature {
+      background: var(--bg-2); border: 1px solid var(--line); border-radius: 14px;
+      padding: 20px;
+    }
+    .feature .icon { font-size: 28px; margin-bottom: 8px; }
+    .feature h3 { font-size: 16px; font-weight: 600; margin: 0 0 4px; }
+    .feature p { color: var(--fg-dim); font-size: 14px; margin: 0; }
+    .promise {
+      background: linear-gradient(135deg, var(--mint-soft), transparent);
+      border: 1px solid var(--mint);
+      border-radius: 18px; padding: 28px; text-align: center; margin: 32px 0;
+    }
+    .promise h2 { color: var(--mint); font-size: 22px; margin: 0 0 8px; }
+    .promise p { color: var(--fg-dim); margin: 0; }
+    footer {
+      margin-top: 64px; padding-top: 24px; border-top: 1px solid var(--line);
+      text-align: center; color: var(--fg-dim); font-size: 13px;
+    }
+    footer a { color: var(--fg-dim); margin: 0 8px; }
+    footer a:hover { color: var(--mint); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="hero">
+      <img src="icon-1024.png" alt="Nickel Pet app icon">
+      <h1>Nickel Pet</h1>
+      <p class="sub">The little stuff adds up. Make the "no" feel like a win.</p>
+      <span class="pill">Free · No ads · No subscription</span>
+      <br>
+      <a class="cta" href="https://apps.apple.com/app/nickel-pet">Download on the App Store</a>
+    </div>
+
+    <div class="features">
+      <div class="feature">
+        <div class="icon">🪙</div>
+        <h3>Skip it, stash it</h3>
+        <p>Every purchase you talk yourself out of feeds your money pet. Confetti, happy haptics, the works.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🛋️</div>
+        <h3>Build a room</h3>
+        <p>Decorate with items priced like the impulse buys you skipped (yes, including That $60 Candle). Levels up as you save.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🐉</div>
+        <h3>Collect pets</h3>
+        <p>A cat, a ghost, a dragon, and more. Each with their own personality, available as one-time unlocks.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">⏳</div>
+        <h3>Sleep on it</h3>
+        <p>Not sure about a purchase? Start a 24-hour cooldown and decide later, guilt-free.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">🎯</div>
+        <h3>Real goals</h3>
+        <p>Set a target — a trip, a new bike, a holiday fund — and skip toward it. Weekly recap tells you how it's going.</p>
+      </div>
+      <div class="feature">
+        <div class="icon">📱</div>
+        <h3>Widgets + Control Center</h3>
+        <p>Skip a purchase from your Lock Screen, Home Screen, or Control Center — right at the point of temptation.</p>
+      </div>
+    </div>
+
+    <div class="promise">
+      <h2>No subscription. No ads. No account. No tracking. Ever.</h2>
+      <p>Your money pet lives entirely on your iPhone. Deleting the app deletes everything.</p>
+    </div>
+
+    <footer>
+      <a href="support.html">Support</a>
+      ·
+      <a href="privacy.html">Privacy</a>
+      ·
+      <a href="mailto:support@nickelpet.app">support@nickelpet.app</a>
+    </footer>
+  </div>
+</body>
+</html>
