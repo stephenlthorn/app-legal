@@ -20,110 +20,110 @@
     .contact-box { background: #f0f0f5; border-radius: 10px; padding: 20px 24px; margin-top: 40px; }
     .contact-box p { margin: 0; font-size: 14px; }
     strong { font-weight: 600; }
+    .summary { background: #eef6ff; border-left: 4px solid #0071e3; border-radius: 4px; padding: 14px 18px; margin: 20px 0; font-size: 15px; }
     .disclaimer { background: #fff8e6; border-left: 4px solid #ffcc00; border-radius: 4px; padding: 14px 18px; margin: 20px 0; font-size: 14px; }
     code { background: #f0f0f5; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+    @media (max-width: 600px) { .container { padding: 28px 20px; } }
   </style>
 </head>
 <body>
   <div class="container">
     <a class="back" href="/">← Back to Apps</a>
     <h1>Privacy Policy — HAM Signal</h1>
-    <p class="meta">Effective Date: March 25, 2026 &nbsp;·&nbsp; Last Updated: March 25, 2026</p>
+    <p class="meta">Effective Date: March 25, 2026 &nbsp;·&nbsp; Last Updated: October 9, 2026</p>
+
+    <div class="summary">
+      <strong>In short:</strong> HAM Signal has no accounts, no analytics, no advertising and no tracking, and there is no HAM Signal server. Your settings and logbook stay on your devices and in your own iCloud. The app contacts public amateur-radio and space-weather services directly. A few of those requests include your callsign or approximate location, and each one is listed below.
+    </div>
 
     <h2 id="introduction">Introduction</h2>
-    <p>HAM Signal ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our iOS application.</p>
+    <p>This policy explains what the HAM Signal app for iPhone, iPad and Apple Watch (including its widgets) stores, what it sends over the internet and to whom, and how you can control it. "We" means the developer of HAM Signal.</p>
     <p><strong>Contact:</strong> <a href="mailto:stephenlthorn@gmail.com">stephenlthorn@gmail.com</a></p>
 
-    <h2 id="information-collected">1. Information We Collect</h2>
+    <h2 id="what-we-collect">1. What We Collect</h2>
+    <p>We collect nothing. HAM Signal does not send any information to us. It contains no analytics, crash-reporting, advertising or tracking software. It does not use your data to track you across other companies' apps or websites, and we do not sell or share your data.</p>
 
-    <h3>1.1 Information You Provide</h3>
+    <h2 id="on-device">2. What Stays on Your Device</h2>
     <ul>
-      <li><strong>Alert settings</strong> — custom alert rules and thresholds you configure within the app</li>
-      <li><strong>Location (optional)</strong> — if you grant permission, your approximate location is used to show relevant space weather for your latitude (e.g., aurora visibility)</li>
+      <li><strong>Settings and profile:</strong> your callsign, license class, home location (QTH) and grid square, alert rules, saved repeaters and preferences.</li>
+      <li><strong>Logbook:</strong> the contacts (QSOs) you log, stored on your device and synced to your own iCloud Drive (see section 4).</li>
+      <li><strong>Cached data:</strong> the latest solar, propagation, satellite and spot data, kept so the app, widgets and Apple Watch can work offline.</li>
+      <li><strong>Notifications:</strong> alerts for space weather, band openings, DX spots and skeds are created by the app on your device. No notification server is involved.</li>
+      <li><strong>Calculations:</strong> propagation estimates, greyline, satellite pass predictions and Maidenhead grid conversions are all computed on your device.</li>
+    </ul>
+    <p>The widgets and the Apple Watch app get their data from the iPhone app through Apple's on-device app group and Watch connectivity, and from the public data sources listed in section 3.</p>
+
+    <h2 id="location">3. Location</h2>
+    <p>Location access is optional and only used while the app is open ("When In Use"). If you allow it, your location is used to centre the maps, work out your grid square, and estimate local propagation, greyline and satellite passes. These calculations happen on your device. You can enter your location by hand instead, and you can turn location access off at any time in iOS Settings › Privacy &amp; Security › Location Services.</p>
+    <p>Your location leaves your device in one case only: the APRS feature, which sends an approximate (rounded) location to the APRS-IS network to find nearby stations. This is explained in section 4.</p>
+
+    <h2 id="third-parties">4. Services the App Contacts</h2>
+    <p>HAM Signal connects directly to the public services below. We don't run any of them. Each one may record ordinary connection information such as your IP address under its own policy. Unless stated otherwise, connections use HTTPS.</p>
+
+    <h3>Space weather and satellite data (no personal data sent)</h3>
+    <ul>
+      <li><strong>NOAA Space Weather Prediction Center</strong> (<code>services.swpc.noaa.gov</code>): solar flux, sunspot regions, K and A indices, X-ray and proton flux, forecasts and solar imagery.</li>
+      <li><strong>CelesTrak</strong> (<code>celestrak.org</code>): orbital data for amateur-radio satellites.</li>
     </ul>
 
-    <h3>1.2 Automatically Collected Information</h3>
+    <h3>APRS (APRS-IS network)</h3>
     <ul>
-      <li><strong>Device information</strong> — device type and iOS version, used to optimize app performance</li>
-      <li><strong>Usage data</strong> — which screens and features you use, to improve the app experience</li>
-      <li><strong>Crash reports</strong> — anonymous diagnostic data when the app crashes, for debugging</li>
+      <li><strong>Sent:</strong> when you open the APRS tab, the app connects to the volunteer-run APRS-IS network (<code>rotate.aprs.net</code>, port 14580) and asks for stations near your location, rounded to about 10 km. By default it connects anonymously and in receive-only mode, as <code>N0CALL</code>, so your callsign is not sent. Your callsign and a matching APRS-IS passcode are sent only if you turn on "Log in as [your callsign]" in the APRS tab, which first shows exactly what will be sent. The app never transmits a position beacon.</li>
+      <li><strong>Earlier versions:</strong> HAM Signal 3.5 and earlier always logged in with the callsign you entered and a matching passcode, and sent your location rounded to about 100 metres.</li>
+      <li><strong>Note:</strong> APRS-IS connections are plain text and not encrypted. APRS is a public amateur-radio network.</li>
     </ul>
 
-    <h3>1.3 Information We Do NOT Collect</h3>
+    <h3>DX cluster</h3>
     <ul>
-      <li>We do not collect your name, email, or contact information</li>
-      <li>We do not access your photos, messages, or contacts</li>
-      <li>We do not track your precise GPS location beyond the optional approximate setting</li>
-      <li>We do not sell your data to third parties or advertisers</li>
+      <li><strong>Sent:</strong> when you use the DX Cluster tab, the app logs in to a public DX cluster node (<code>dxc.nc7j.com</code>, <code>dxc.ve7cc.net</code> or <code>w3lpl.net</code>) with your callsign, because cluster nodes require one.</li>
+      <li><strong>Note:</strong> DX cluster connections are plain-text telnet and are not encrypted.</li>
     </ul>
 
-    <h2 id="how-we-use">2. How We Use Your Information</h2>
-    <p>We use your information to:</p>
+    <h3>PSK Reporter ("Heard")</h3>
     <ul>
-      <li>Fetch and display real-time solar and space weather data from public NOAA sources</li>
-      <li>Send you push notifications when your configured alert conditions are met (e.g., solar flare detected, geomagnetic storm)</li>
-      <li>Populate home screen and lock screen widgets with current solar conditions</li>
-      <li>Improve the app — analyze usage patterns, fix bugs, and optimize performance</li>
-      <li>Provide customer support — respond to your inquiries</li>
+      <li><strong>Sent:</strong> your callsign to <code>retrieve.pskreporter.info</code>, to find which stations have reported hearing you. Your location is not sent.</li>
     </ul>
 
-    <h2 id="data-storage">3. Data Storage and Security</h2>
-
-    <h3>3.1 Where Your Data Is Stored</h3>
+    <h3>Callsign lookups</h3>
     <ul>
-      <li><strong>On your device</strong> — alert settings and cached solar data are stored locally using iOS UserDefaults and app sandbox storage</li>
-      <li><strong>Alert history</strong> — stored locally on device using SwiftData (iOS 17+)</li>
-      <li><strong>iCloud backup</strong> — if you have iCloud backup enabled on your device, app data may be included in your personal iCloud backup (controlled by you in iOS Settings)</li>
+      <li><strong>callook.info</strong> (FCC license data): the callsign you look up, such as your own when checking your license class, or a contact's when logging a QSO.</li>
+      <li><strong>HamDB</strong> (<code>api.hamdb.org</code>): the callsigns of APRS stations you look up or add to your list.</li>
     </ul>
 
-    <h3>3.2 Security Measures</h3>
+    <h3>Parks on the Air (POTA) and Summits on the Air (SOTA)</h3>
     <ul>
-      <li>All data is stored securely using iOS built-in security features</li>
-      <li>We do not transmit personal information to external servers beyond the public NOAA solar data feed</li>
-      <li>NOAA data is fetched over HTTPS — we do not control the NOAA data content</li>
+      <li><strong>Park and summit lookups:</strong> the park or summit reference you enter, sent to <code>api.pota.app</code> or <code>api2.sota.org.uk</code>.</li>
+      <li><strong>Self-spots:</strong> only when you post a spot. The app sends your callsign, the park reference, frequency, mode and your comment to POTA (<code>api.pota.app</code>). POTA spots are public and anyone can see them.</li>
     </ul>
 
-    <h3>3.3 Data Retention</h3>
+    <h3>Apple</h3>
     <ul>
-      <li>Your settings and alert history remain on your device until you delete the app or clear the data via Settings → Clear Cached Solar Data</li>
+      <li><strong>iCloud Drive:</strong> your logbook is stored in HAM Signal's folder in <em>your own</em> iCloud Drive, so it syncs between your devices. We cannot access it. To stop the sync, turn off iCloud Drive for HAM Signal in iOS Settings › [your name] › iCloud.</li>
+      <li><strong>In-app purchases:</strong> HAM Signal Pro is purchased through Apple's App Store. Apple handles payment. The app only receives confirmation of your purchase and never sees your payment details.</li>
+      <li>See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
     </ul>
 
-    <h2 id="third-party">4. Third-Party Services</h2>
-    <p>HAM Signal uses these third-party services:</p>
+    <h3>Links you open</h3>
+    <p>Some screens link to websites such as QRZ.com or RepeaterBook. These open in your browser only when you tap them, and that website's policy then applies.</p>
+
+    <h2 id="your-choices">5. Your Choices and Rights</h2>
     <ul>
-      <li><strong>NOAA Space Weather Prediction Center</strong> — we fetch public solar and geomagnetic data from <code>hamqsl.com</code> (solar data) and NOAA APIs. We do not control and are not responsible for the content of those feeds. See <a href="https://www.swpc.noaa.gov/" target="_blank">NOAA Privacy Policy</a>.</li>
-      <li><strong>Apple Push Notification Service</strong> — used to deliver alert notifications if you enable them. See <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple Privacy Policy</a>.</li>
-      <li><strong>NASA SDO Image Server</strong> — solar disk imagery sourced from NASA's SDO satellite. See <a href="https://www.nasa.gov/about/policy/nasa_privacy.html" target="_blank">NASA Privacy Policy</a>.</li>
+      <li><strong>Location:</strong> allow, deny or revoke at any time in iOS Settings.</li>
+      <li><strong>Notifications:</strong> turn them off in the app's alert settings or in iOS Settings › Notifications.</li>
+      <li><strong>Network features:</strong> APRS, DX cluster, Heard, lookups and POTA spotting only connect when you use them. If you don't open those features, nothing involving your callsign or location is sent.</li>
+      <li><strong>Delete your data:</strong> Settings › Clear Cached Solar Data removes cached data. Deleting the app removes everything stored on the device. To delete the synced logbook, remove HAM Signal's data in iOS Settings › [your name] › iCloud › Manage Account Storage.</li>
     </ul>
-    <p>We do not use analytics SDKs, advertising networks, or data broker services.</p>
+    <p>We hold no personal data about you, so there is nothing for us to access, correct or delete. Data posted to public networks (for example, a POTA spot) is controlled by those networks. If you live in the EEA, UK or California and have questions about your rights, contact <a href="mailto:stephenlthorn@gmail.com">stephenlthorn@gmail.com</a>.</p>
 
-    <h2 id="widgets">5. Widgets</h2>
-    <p>HAM Signal includes home screen and lock screen widgets that display current solar conditions. Widget data is shared with the main app via a secure app group and does not involve any third-party data collection beyond what is described above.</p>
+    <h2 id="childrens-privacy">6. Children's Privacy</h2>
+    <p>HAM Signal is not directed to children under 13, and we do not knowingly collect any data from children.</p>
 
-    <h2 id="your-rights">6. Your Rights</h2>
-    <p>You have the right to:</p>
-    <ul>
-      <li><strong>Access your data</strong> — all data is stored locally on your device</li>
-      <li><strong>Delete your data</strong> — use Settings → Clear Cached Solar Data, or delete the app entirely</li>
-      <li><strong>Opt out of notifications</strong> — disable in iOS Settings or app Settings</li>
-      <li><strong>Revoke location access</strong> — manage in iOS Privacy Settings at any time</li>
-    </ul>
+    <h2 id="changes">7. Changes to This Policy</h2>
+    <p>If what the app sends changes, we will update this page and the "Last Updated" date above.</p>
 
-    <h3>GDPR Rights (EU Users)</h3>
-    <p>If you are in the European Economic Area, you have additional rights including the right to data portability, the right to erasure, and the right to restrict processing. To exercise these rights, contact us at <a href="mailto:stephenlthorn@gmail.com">stephenlthorn@gmail.com</a>.</p>
-
-    <h3>CCPA Rights (California Users)</h3>
-    <p>If you are a California resident, you have the right to know what personal information we collect, the right to request deletion, and the right to opt out of sale of personal information (we do not sell your data). To exercise these rights, contact us at <a href="mailto:stephenlthorn@gmail.com">stephenlthorn@gmail.com</a>.</p>
-
-    <h2 id="childrens-privacy">7. Children's Privacy</h2>
-    <p>HAM Signal is not intended for users under 13 years of age. We do not knowingly collect data from children. If you believe a child has provided us with personal information, contact us at <a href="mailto:stephenlthorn@gmail.com">stephenlthorn@gmail.com</a>.</p>
-
-    <h2 id="changes">8. Changes to This Policy</h2>
-    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. Continued use of the app after changes constitutes acceptance.</p>
-
-    <h2 id="disclaimer">9. Space Weather Disclaimer</h2>
+    <h2 id="disclaimer">8. Space Weather Disclaimer</h2>
     <div class="disclaimer">
-      HAM Signal displays space weather data sourced from NOAA and NASA. This data is provided for informational purposes only. We do not guarantee the accuracy, completeness, or timeliness of any displayed data. Space weather conditions can change rapidly. Do not rely solely on this app for decisions that could affect the safety of life or property. HAM Signal is not affiliated with or endorsed by NOAA or NASA.
+      HAM Signal shows space-weather data from NOAA and other public sources for informational purposes only. We do not guarantee its accuracy, completeness or timeliness, and conditions can change quickly. Do not rely solely on this app for decisions that could affect the safety of life or property. HAM Signal is not affiliated with or endorsed by NOAA, NASA, ARRL, POTA, SOTA, PSK Reporter or any APRS-IS or DX cluster operator.
     </div>
 
     <div class="contact-box">
