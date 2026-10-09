@@ -55,7 +55,7 @@
 
     <h2 id="location">3. Location</h2>
     <p>Location access is optional and only used while the app is open ("When In Use"). If you allow it, your location is used to centre the maps, work out your grid square, and estimate local propagation, greyline and satellite passes. These calculations happen on your device. You can enter your location by hand instead, and you can turn location access off at any time in iOS Settings › Privacy &amp; Security › Location Services.</p>
-    <p>Your location leaves your device in one case only: the APRS feature, which sends an approximate (rounded) location to the APRS-IS network to find nearby stations. This is explained in section 4.</p>
+    <p>Only an approximate location ever leaves your device, in two cases: APRS sends your location rounded to about 10 km to the APRS-IS network to find nearby stations, and Band Activity sends your 4-character grid square (an area roughly 110 × 160 km) to PSK Reporter. Both are explained in section 4.</p>
 
     <h2 id="third-parties">4. Services the App Contacts</h2>
     <p>HAM Signal connects directly to the public services below. We don't run any of them. Each one may record ordinary connection information such as your IP address under its own policy. Unless stated otherwise, connections use HTTPS.</p>
@@ -79,9 +79,10 @@
       <li><strong>Note:</strong> DX cluster connections are plain-text telnet and are not encrypted.</li>
     </ul>
 
-    <h3>PSK Reporter ("Heard")</h3>
+    <h3>PSK Reporter ("Heard" and Band Activity)</h3>
     <ul>
-      <li><strong>Sent:</strong> your callsign to <code>retrieve.pskreporter.info</code>, to find which stations have reported hearing you. Your location is not sent.</li>
+      <li><strong>Heard:</strong> your callsign is sent to <code>retrieve.pskreporter.info</code> to find which stations have reported hearing you. Your location is not sent.</li>
+      <li><strong>Band Activity:</strong> your 4-character grid square (for example FN31, an area roughly 110 × 160 km) is sent, to find DX stations being heard near you. Your callsign and exact location are not sent. HAM Signal 3.5 and earlier sent nothing about you here and requested a worldwide feed instead.</li>
     </ul>
 
     <h3>Callsign lookups</h3>
