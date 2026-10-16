@@ -30,14 +30,14 @@
   <div class="container">
     <a class="back" href="/app-legal/">← Back to Apps</a>
     <h1>Privacy Policy — HAM Signal</h1>
-    <p class="meta">Effective Date: March 25, 2026 &nbsp;·&nbsp; Last Updated: October 9, 2026</p>
+    <p class="meta">Effective Date: March 25, 2026 &nbsp;·&nbsp; Last Updated: October 13, 2026</p>
 
     <div class="summary">
-      <strong>In short:</strong> HAM Signal has no accounts, no analytics, no advertising and no tracking, and there is no HAM Signal server. Your settings and logbook stay on your devices and in your own iCloud. The app contacts public amateur-radio and space-weather services directly. A few of those requests include your callsign or approximate location, and each one is listed below.
+      <strong>In short:</strong> HAM Signal has no accounts, no analytics, no advertising and no tracking, and there is no HAM Signal server. Your settings and logbook stay on your devices and in your own iCloud or Google device backup. The app contacts public amateur-radio and space-weather services directly. A few of those requests include your callsign or approximate location, and each one is listed below.
     </div>
 
     <h2 id="introduction">Introduction</h2>
-    <p>This policy explains what the HAM Signal app for iPhone, iPad and Apple Watch (including its widgets) stores, what it sends over the internet and to whom, and how you can control it. "We" means the developer of HAM Signal.</p>
+    <p>This policy explains what the HAM Signal app for iPhone, iPad, Apple Watch and Android (including widgets) stores, what it sends over the internet and to whom, and how you can control it. "We" means the developer of HAM Signal.</p>
     <p><strong>Contact:</strong> <a href="mailto:stephenlthorn@gmail.com">stephenlthorn@gmail.com</a></p>
 
     <h2 id="what-we-collect">1. What We Collect</h2>
@@ -46,7 +46,7 @@
     <h2 id="on-device">2. What Stays on Your Device</h2>
     <ul>
       <li><strong>Settings and profile:</strong> your callsign, license class, home location (QTH) and grid square, alert rules, saved repeaters and preferences.</li>
-      <li><strong>Logbook:</strong> the contacts (QSOs) you log, stored on your device and synced to your own iCloud Drive (see section 4).</li>
+      <li><strong>Logbook:</strong> the contacts (QSOs) you log, stored on your device. On iPhone and iPad it syncs to your own iCloud Drive; on Android it is included in Android's device backup to your Google account if you have backup turned on (see section 4).</li>
       <li><strong>Cached data:</strong> the latest solar, propagation, satellite and spot data, kept so the app, widgets and Apple Watch can work offline.</li>
       <li><strong>Notifications:</strong> alerts for space weather, band openings, DX spots and skeds are created by the app on your device. No notification server is involved.</li>
       <li><strong>Calculations:</strong> propagation estimates, greyline, satellite pass predictions and Maidenhead grid conversions are all computed on your device.</li>
@@ -54,7 +54,7 @@
     <p>The widgets and the Apple Watch app get their data from the iPhone app through Apple's on-device app group and Watch connectivity, and from the public data sources listed in section 4.</p>
 
     <h2 id="location">3. Location</h2>
-    <p>Location access is optional and only used while the app is open ("When In Use"). If you allow it, your location is used to centre the maps, work out your grid square, and estimate local propagation, greyline and satellite passes. These calculations happen on your device. You can enter your location by hand instead, and you can turn location access off at any time in iOS Settings › Privacy &amp; Security › Location Services.</p>
+    <p>Location access is optional and only used while the app is open ("When In Use"). If you allow it, your location is used to centre the maps, work out your grid square, and estimate local propagation, greyline and satellite passes. These calculations happen on your device. On Android the app asks only for approximate location. You can enter your location by hand instead, and you can turn location access off at any time in iOS Settings › Privacy &amp; Security › Location Services, or on Android in Settings › Apps › HAM Signal › Permissions › Location.</p>
     <p>Only an approximate location ever leaves your device, in two cases: APRS sends your location rounded to about 10 km to the APRS-IS network to find nearby stations, and Band Activity sends your 4-character grid square (an area roughly 110 × 160 km) to PSK Reporter. Both are explained in section 4.</p>
 
     <h2 id="third-parties">4. Services the App Contacts</h2>
@@ -103,16 +103,26 @@
       <li><strong>In-app purchases:</strong> HAM Signal Pro is purchased through Apple's App Store. Apple handles payment. The app only receives confirmation of your purchase and never sees your payment details.</li>
       <li>See <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple's Privacy Policy</a>.</li>
     </ul>
+    <h3>Google (Android)</h3>
+    <ul>
+      <li><strong>Android backup:</strong> if you have Android backup turned on, Android includes HAM Signal's settings and logbook in your device backup to <em>your own</em> Google account. We cannot access it. You can turn backup off in Android Settings › Google › Backup.</li>
+      <li><strong>In-app purchases:</strong> HAM Signal Pro is purchased through Google Play. Google handles payment, free trials and subscription renewals. The app only receives confirmation of your purchase or subscription and never sees your payment details. Manage or cancel a subscription in Google Play › Payments &amp; subscriptions.</li>
+      <li>See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a>.</li>
+    </ul>
 
+    <h3>Maps (OpenFreeMap)</h3>
+    <ul>
+      <li><strong>Sent:</strong> on Android, the APRS map and the grid-square awards map load map tiles from OpenFreeMap (tiles.openfreemap.org) for the area shown on screen, which is usually around your station. No callsign or account information is sent. OpenFreeMap may record ordinary connection information such as your IP address under its own policy.</li>
+    </ul>
     <h3>Links you open</h3>
     <p>Some screens link to websites such as QRZ.com or RepeaterBook. These open in your browser only when you tap them, and that website's policy then applies.</p>
 
     <h2 id="your-choices">5. Your Choices and Rights</h2>
     <ul>
-      <li><strong>Location:</strong> allow, deny or revoke at any time in iOS Settings.</li>
-      <li><strong>Notifications:</strong> turn them off in the app's alert settings or in iOS Settings › Notifications.</li>
+      <li><strong>Location:</strong> allow, deny or revoke at any time in iOS Settings or Android Settings.</li>
+      <li><strong>Notifications:</strong> turn them off in the app's alert settings, in iOS Settings › Notifications, or in Android Settings › Apps › HAM Signal › Notifications.</li>
       <li><strong>Network features:</strong> APRS, DX cluster, Heard, callsign lookups and POTA spotting only connect when you use them. Band Activity, on the Conditions tab, loads automatically when you open that tab, and sends only your 4-character grid square. If you don't open these features, nothing involving your callsign or location is sent.</li>
-      <li><strong>Delete your data:</strong> Settings › Clear Cached Solar Data removes cached data. Deleting the app removes everything stored on the device. To delete the synced logbook, remove HAM Signal's data in iOS Settings › [your name] › iCloud › Manage Account Storage.</li>
+      <li><strong>Delete your data:</strong> Settings › Clear Cached Solar Data removes cached data. Deleting the app removes everything stored on the device. To delete the synced logbook, remove HAM Signal's data in iOS Settings › [your name] › iCloud › Manage Account Storage. On Android, deleting the app removes its data from the device, and its backup copy is managed in your Google account's Android backup settings.</li>
     </ul>
     <p>We hold no personal data about you, so there is nothing for us to access, correct or delete. Data posted to public networks (for example, a POTA spot) is controlled by those networks. If you live in the EEA, UK or California and have questions about your rights, contact <a href="mailto:stephenlthorn@gmail.com">stephenlthorn@gmail.com</a>.</p>
 
