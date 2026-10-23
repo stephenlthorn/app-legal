@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Privacy Policy — HAM Signal</title>
+  <title>HAM Signal Privacy Policy</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif; line-height: 1.7; color: #1c1c1e; background: #f5f5f7; padding: 40px 20px; }
@@ -29,11 +29,11 @@
 <body>
   <div class="container">
     <a class="back" href="/app-legal/">← Back to Apps</a>
-    <h1>Privacy Policy — HAM Signal</h1>
-    <p class="meta">Effective Date: March 25, 2026 &nbsp;·&nbsp; Last Updated: October 9, 2026</p>
+    <h1>HAM Signal Privacy Policy</h1>
+    <p class="meta">Effective Date: March 25, 2026 &nbsp;·&nbsp; Last Updated: October 23, 2026</p>
 
     <div class="summary">
-      <strong>In short:</strong> HAM Signal has no accounts, no analytics, no advertising and no tracking, and there is no HAM Signal server. Your settings and logbook stay on your devices and in your own iCloud. The app contacts public amateur-radio and space-weather services directly. A few of those requests include your callsign or approximate location, and each one is listed below.
+      <strong>In short:</strong> HAM Signal has no accounts, no analytics, no advertising and no tracking, and there is no HAM Signal server. Your settings and logbook stay on your devices and in your own iCloud. The app contacts public amateur-radio and space-weather services directly. Some of those requests include your callsign, your 4-character grid square or your approximate location (APRS, rounded to about 10 km), including some that alerts make in the background with the app closed, and each one is listed below. If you turn on Rover mode, HAM Signal may use your location "Always", only to switch to a saved location when you arrive there; your position is compared on your device and never sent. If you sign in to Logbook of the World, your LoTW username and password are kept in your device's Keychain and sent only to the ARRL's LoTW server.
     </div>
 
     <h2 id="introduction">Introduction</h2>
@@ -46,23 +46,27 @@
     <h2 id="on-device">2. What Stays on Your Device</h2>
     <ul>
       <li><strong>Settings and profile:</strong> your callsign, license class, home location (QTH) and grid square, alert rules, saved repeaters and preferences.</li>
+      <li><strong>Saved locations and Rover:</strong> the portable and park locations you save (a HAM Signal Pro feature), which one is in use, and, if Rover mode is on, which saved place you were last at. Rover keeps only those place names and IDs; it doesn't store your position.</li>
+      <li><strong>Heard history:</strong> each time HAM Signal asks PSK Reporter who heard your callsign (see section 4), it keeps that hour's reception reports on your device for 30 days (up to 15,000 reports for each of your last 3 callsigns), for the Heard map and Heard alerts (HAM Signal Pro). It is included in your device backups and never sent anywhere. Deleting the app removes it.</li>
       <li><strong>Logbook:</strong> the contacts (QSOs) you log, stored on your device and synced to your own iCloud Drive (see section 4).</li>
       <li><strong>Cached data:</strong> the latest solar, propagation, satellite and spot data, kept so the app, widgets and Apple Watch can work offline.</li>
-      <li><strong>Notifications:</strong> alerts for space weather, band openings, DX spots and skeds are created by the app on your device. No notification server is involved.</li>
-      <li><strong>Calculations:</strong> propagation estimates, greyline, satellite pass predictions and Maidenhead grid conversions are all computed on your device.</li>
+      <li><strong>Notifications:</strong> alerts (space weather and heads-up alerts, band openings, DX spots, VHF, POTA, Heard and LoTW), greyline reminders, the morning briefing and planned path alerts are created by the app on your device. No notification server is involved. A history of the alerts posted, and when their data was observed and delivered (Alert timing), is kept on the device.</li>
+      <li><strong>Calculations:</strong> propagation estimates and the path planner, greyline, satellite pass predictions, Rover's arrival checks and Maidenhead grid conversions are all computed on your device.</li>
+      <li><strong>LoTW sign-in and confirmations:</strong> if you sign in to ARRL Logbook of the World (a HAM Signal Pro feature), your LoTW username and password are stored in your device's Keychain, for this device only: they are not synced to iCloud Keychain and not restored to another device. The confirmations downloaded from LoTW are stored on the device and left out of device backups. Neither is sent to us. Signing out removes both. iOS can keep Keychain items after an app is deleted; if you reinstall HAM Signal, it deletes any LoTW sign-in left from before when it first opens, before anything is sent.</li>
     </ul>
     <p>The widgets and the Apple Watch app get their data from the iPhone app through Apple's on-device app group and Watch connectivity, and from the public data sources listed in section 4.</p>
 
     <h2 id="location">3. Location</h2>
-    <p>Location access is optional and only used while the app is open ("When In Use"). If you allow it, your location is used to centre the maps, work out your grid square, and estimate local propagation, greyline and satellite passes. These calculations happen on your device. You can enter your location by hand instead, and you can turn location access off at any time in iOS Settings › Privacy &amp; Security › Location Services.</p>
-    <p>Only an approximate location ever leaves your device, in two cases: APRS sends your location rounded to about 10 km to the APRS-IS network to find nearby stations, and Band Activity sends your 4-character grid square (an area roughly 110 × 160 km) to PSK Reporter. Both are explained in section 4.</p>
+    <p>Location access is optional. Unless you turn on Rover mode, it is used only while the app is open ("When In Use"). If you allow it, your location is used to centre the maps, work out your grid square, and estimate local propagation, greyline and satellite passes. These calculations happen on your device. You can enter your location by hand instead, and you can turn location access off at any time in iOS Settings › Privacy &amp; Security › Location Services.</p>
+    <p><strong>Rover mode</strong> (HAM Signal Pro, off unless you turn it on) switches HAM Signal to one of your saved locations when you arrive there, even with the app closed. For that it asks for location access "Always" (only when you turn Rover on), and iOS watches for you arriving within about 1 km of your home location or a saved location (up to 20 places), telling the app when you do. Your position is compared with your saved locations on your device only; Rover never sends or stores your position. If you allow location only "While Using", Rover switches when you open the app at a saved location instead. Turning Rover off stops it watching.</p>
+    <p>Only an approximate location ever leaves your device, in two ways, both explained in section 4: APRS sends your location rounded to about 10 km to the APRS-IS network to find nearby stations, and several features send the 4-character grid square of the location in use (an area roughly 110 × 160 km) to PSK Reporter: Band Activity, and band-opening alerts you set to measured, DX spot alerts and 6m and 2m alerts, which also check in background refreshes with the app closed.</p>
 
     <h2 id="third-parties">4. Services the App Contacts</h2>
     <p>HAM Signal connects directly to the public services below. We don't run any of them. Each one may record ordinary connection information such as your IP address under its own policy. Unless stated otherwise, connections use HTTPS.</p>
 
     <h3>Space weather and satellite data (no personal data sent)</h3>
     <ul>
-      <li><strong>NOAA Space Weather Prediction Center</strong> (<code>services.swpc.noaa.gov</code>): solar flux, sunspot regions, K and A indices, X-ray and proton flux, forecasts and solar imagery.</li>
+      <li><strong>NOAA Space Weather Prediction Center</strong> (<code>services.swpc.noaa.gov</code>): solar flux, sunspot regions, K and A indices, X-ray, proton and electron flux, solar wind, the aurora forecast, the 3-day and 27-day forecasts and solar imagery, also in background refreshes.</li>
       <li><strong>CelesTrak</strong> (<code>celestrak.org</code>): orbital data for amateur-radio satellites.</li>
     </ul>
 
@@ -79,10 +83,11 @@
       <li><strong>Note:</strong> DX cluster connections are plain-text telnet and are not encrypted.</li>
     </ul>
 
-    <h3>PSK Reporter ("Heard" and Band Activity)</h3>
+    <h3>PSK Reporter (Heard, Band Activity and alerts)</h3>
     <ul>
-      <li><strong>Heard:</strong> your callsign is sent to <code>retrieve.pskreporter.info</code> to find which stations have reported hearing you. Your location is not sent.</li>
-      <li><strong>Band Activity:</strong> your 4-character grid square (for example FN31, an area roughly 110 × 160 km) is sent, to find DX stations being heard near you. Your callsign and exact location are not sent. HAM Signal 3.5 and earlier sent nothing about you here and requested a worldwide feed instead.</li>
+      <li><strong>Heard:</strong> your callsign is sent to <code>retrieve.pskreporter.info</code> to find which stations have reported hearing you, while "Am I being heard?" is open, and every 10 minutes while the app is open with a Heard alert on. With HAM Signal Pro and a callsign set, it is also sent in background refreshes with the app closed, so the Heard history fills in. Your location is not sent.</li>
+      <li><strong>Band Activity:</strong> the 4-character grid square of the location in use (for example FN31, an area roughly 110 × 160 km) is sent, to find DX stations being heard near you, when you open Band Activity. Your callsign and exact location are not sent. HAM Signal 3.5 and earlier sent nothing about you here and requested a worldwide feed instead.</li>
+      <li><strong>Alerts:</strong> the same 4-character grid square is sent, and nothing else about you, while one of these is on: a band-opening alert you set to measured (band alerts use the forecast unless you choose measured), a DX spot alert, or a 6m or 2m alert. These checks run regularly while the app is open, and in background refreshes with the app closed, which iOS schedules.</li>
     </ul>
 
     <h3>Callsign lookups</h3>
@@ -94,7 +99,14 @@
     <h3>Parks on the Air (POTA) and Summits on the Air (SOTA)</h3>
     <ul>
       <li><strong>Park and summit lookups:</strong> the park or summit reference you enter, sent to <code>api.pota.app</code> or <code>api2.sota.org.uk</code>.</li>
+      <li><strong>Spot list:</strong> while DX › POTA or the VHF card is on screen, or a POTA or VHF alert is on (also in background refreshes with the app closed), the app downloads POTA's public list of activator spots from <code>api.pota.app</code>, at most once every 2 minutes. Nothing about you is sent; the request names only the app and its version. Matching spots against your log happens on your device.</li>
       <li><strong>Self-spots:</strong> only when you post a spot. The app sends your callsign, the park reference, frequency, mode and your comment to POTA (<code>api.pota.app</code>). POTA spots are public and anyone can see them.</li>
+    </ul>
+
+    <h3>ARRL Logbook of the World (LoTW)</h3>
+    <ul>
+      <li><strong>Sent:</strong> only if you sign in to LoTW in Settings › LoTW confirmations (HAM Signal Pro). Your LoTW username and password are sent, over HTTPS, only to the ARRL's LoTW report service (<code>lotw.arrl.org/lotwuser/lotwreport.adi</code>), with the date of the last confirmation already downloaded, to download the confirmations (QSLs) in your LoTW account. This happens when you sign in, when you tap Sync now, and about once a day while you have Pro (in a background refresh or when you open the app). Nothing is uploaded to LoTW.</li>
+      <li><strong>Note:</strong> LoTW's report service takes the username and password as part of the request address. HTTPS encrypts it in transit; the ARRL may record requests under its own policy. HAM Signal never writes the request address to a log, a cache or an error message.</li>
     </ul>
 
     <h3>Apple</h3>
@@ -109,10 +121,11 @@
 
     <h2 id="your-choices">5. Your Choices and Rights</h2>
     <ul>
-      <li><strong>Location:</strong> allow, deny or revoke at any time in iOS Settings.</li>
+      <li><strong>Location:</strong> allow, deny or revoke at any time in iOS Settings. Turn Rover mode off in the app to stop it watching your saved locations.</li>
       <li><strong>Notifications:</strong> turn them off in the app's alert settings or in iOS Settings › Notifications.</li>
-      <li><strong>Network features:</strong> APRS, DX cluster, Heard, callsign lookups and POTA spotting only connect when you use them. Band Activity, on the Conditions tab, loads automatically when you open that tab, and sends only your 4-character grid square. If you don't open these features, nothing involving your callsign or location is sent.</li>
-      <li><strong>Delete your data:</strong> Settings › Clear Cached Solar Data removes cached data. Deleting the app removes everything stored on the device. To delete the synced logbook, remove HAM Signal's data in iOS Settings › [your name] › iCloud › Manage Account Storage.</li>
+      <li><strong>Network features:</strong> APRS, DX cluster, callsign lookups and POTA spotting only connect when you use them. Band Activity, on the Conditions tab, loads automatically when you open that tab, and sends only your 4-character grid square. Some features also run with the app closed, in background refreshes: measured band-opening, DX spot and 6m and 2m alerts send your 4-character grid square to PSK Reporter; with HAM Signal Pro and a callsign set, Heard sends your callsign to PSK Reporter; LoTW, once you sign in, syncs about once a day. Turning those alerts off, clearing your callsign, or signing out of LoTW stops them.</li>
+      <li><strong>LoTW:</strong> Settings › LoTW confirmations › Sign Out removes your LoTW username, password and downloaded confirmations from the device. Your log isn't changed.</li>
+      <li><strong>Delete your data:</strong> Settings › Clear Cached Solar Data removes cached data. Deleting the app removes everything stored on the device (including the Heard history and saved locations), except that iOS may keep your LoTW username and password in the Keychain until HAM Signal is installed and opened again (it deletes them then). To remove them at once, sign out of LoTW before deleting the app. To delete the synced logbook, remove HAM Signal's data in iOS Settings › [your name] › iCloud › Manage Account Storage.</li>
     </ul>
     <p>We hold no personal data about you, so there is nothing for us to access, correct or delete. Data posted to public networks (for example, a POTA spot) is controlled by those networks. If you live in the EEA, UK or California and have questions about your rights, contact <a href="mailto:stephenlthorn@gmail.com">stephenlthorn@gmail.com</a>.</p>
 
